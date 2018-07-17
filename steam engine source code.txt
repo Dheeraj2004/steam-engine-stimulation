@@ -1,16 +1,6 @@
-/**
+ 
 
-  Description: Interactive 3D graphics, Assignment #1
-               Miniature Steam Engine Simulation.
-  Author:      Troy Robinette
-  Date:        29/9/95
-  Email:       troyr@yallara.cs.rmit.edu.au
-  Notes:       - Transparence doesn't quite work. The color of the
-                 underlying object doesn't show through. 
-	       - Also only the front side of the transparent objects are
-		 transparent.
-
-**/
+  
 
 #include <stdio.h>
 #include <GL/glut.h>
@@ -590,7 +580,7 @@ myReshape(int w, int h)
 int 
 main(int argc, char **argv)
 {
-  puts("Miniature Steam Engine                    Troy Robinette\n");
+  puts("Miniature Steam Engine     \n");
 
   puts("Keypad Arrow keys (with NUM_LOCK on) rotates object.");
   puts("Rotate crank: 'a' = anti-clock wise 'z' = clock wise");
@@ -606,7 +596,7 @@ main(int argc, char **argv)
 
   /* Transperancy won't work properly without GLUT_ALPHA */
   glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH | GLUT_MULTISAMPLE);
-  glutCreateWindow("Miniature Steam Engine by Troy Robinette");
+  glutCreateWindow("Miniature Steam Engine  ");
 
   glutDisplayFunc(display);
   glutKeyboardFunc(keyboard);
